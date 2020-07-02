@@ -55,10 +55,10 @@ const IndexPage = () => {
             <CardContent>
               {allSanitySocial.edges.map(({ node: social }) => (
                 <Box key={social.name}>
-                  <Typography variant="overline" style={{ fontSize: '1.25rem' }}>
+                  <Typography variant="overline" style={{ fontSize: '1.25rem' }} component="p">
                     {social.name}
                   </Typography>
-                  <Link variant="body1" component="p">
+                  <Link href={social.url} target="_blank">
                     {social.url}
                   </Link>
                 </Box>
